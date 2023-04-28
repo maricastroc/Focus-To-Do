@@ -15,6 +15,7 @@ export const HistoryContainer = styled.main`
   }
 
   @media (max-width: 880px) {
+    width: 100%;
     padding: 2.5rem 0;
   }
 `
@@ -69,13 +70,13 @@ export const HistoryList = styled.div`
 
     @media (max-width: 880px) {
       table {
-        min-width: 320px;
+        min-width: 310px;
         display: flex;
         flex-wrap: wrap;
       }
       td {
         &:first-child {
-          width: clamp(5rem, 22vw, 25rem);
+          width: clamp(12rem, 30vw, 25rem);
           padding-left: 1.5rem;
         }
       }

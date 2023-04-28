@@ -30,7 +30,7 @@ export function Countdown(props: CountdownCycleWarningProps) {
     if (activeCycle) {
       document.title = `${minutes}:${seconds}`
     } else {
-      document.title = 'Timer App'
+      document.title = 'Timer & Task Manager'
     }
   }, [activeCycle, minutes, seconds])
 
