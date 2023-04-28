@@ -18,7 +18,7 @@ export const HistoryContainer = styled.main`
     padding: 2.5rem 0;
   }
 `
-// styled-components, roteamento com React Router DOM, contextos, Reducers, immers, ReactHook Form e validação usando hookform/resolvers
+
 export const HistoryList = styled.div`
   flex: 1;
   overflow: auto;
