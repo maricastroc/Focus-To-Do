@@ -1,5 +1,3 @@
-import { useContext } from 'react'
-import { CyclesContext } from '../../../../contexts/CyclesContext'
 import { FinishedCycleWarningContainer, BackToHomeButton } from './styles'
 import { HandsClapping } from 'phosphor-react'
 

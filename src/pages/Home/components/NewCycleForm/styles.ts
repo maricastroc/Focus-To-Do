@@ -23,6 +23,7 @@ export const FormContainer = styled.div`
 `
 
 const BaseInput = styled.input`
+  cursor: pointer;
   background: transparent;
   height: 2.5rem;
   border: 0;

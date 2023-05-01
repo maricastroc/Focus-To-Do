@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const HistoryContainer = styled.main`
   flex: 1;
-  padding: 3.5rem;
+  padding: 3.5rem 3.5rem 1rem;
   display: flex;
   flex-direction: column;
   h1 {
@@ -11,12 +11,25 @@ export const HistoryContainer = styled.main`
   }
 
   @media (max-width: 1250px) {
-    padding: 4.5rem 2.5rem 3.5rem;
+    padding: 4.5rem 2.5rem 1rem;
   }
 
   @media (max-width: 880px) {
     width: 100%;
-    padding: 2.5rem 0;
+    padding: 2.5rem 0 1rem;
+  }
+`
+
+export const HistoryContainerBlocked = styled(HistoryContainer)`
+  &::after {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    min-height: 200vh;
+    content: '';
+    backdrop-filter: blur(3px);
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 6;
   }
 `
 
@@ -80,6 +93,28 @@ export const HistoryList = styled.div`
           padding-left: 1.5rem;
         }
       }
+    }
+  }
+`
+
+export const ButtonContainer = styled.div`
+  margin: 0 auto;
+  display: flex;
+  color: ${(props) => props.theme['gray-700']};
+
+  button {
+    cursor: pointer;
+    margin-top: 2rem;
+    color: ${(props) => props.theme['gray-300']};
+    background-color: ${(props) => props.theme['gray-600']};
+    border: none;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    padding: 0.7rem 1rem;
+    transition: 300ms;
+
+    &:hover {
+      background-color: ${(props) => props.theme['gray-700']};
     }
   }
 `

@@ -50,20 +50,12 @@ export function Home() {
     reset()
   }
 
-  function handleSetInterruptCycle() {
-    setInterruptCycle(false)
-  }
-
-  function handleCompletedCycle() {
-    setCompletedCycle(true)
-  }
-
   return (
     <>
       {interruptCycle || completedCycle ? (
         <HomeContainerBlocked>
           {interruptCycle && (
-            <InterruptCycleWarning onClick={handleSetInterruptCycle} />
+            <InterruptCycleWarning onClick={() => setInterruptCycle(false)} />
           )}
           {completedCycle && (
             <FinishedCycleWarning onClick={() => setCompletedCycle(false)} />
@@ -92,7 +84,7 @@ export function Home() {
       ) : (
         <HomeContainer>
           {interruptCycle && (
-            <InterruptCycleWarning onClick={handleSetInterruptCycle} />
+            <InterruptCycleWarning onClick={() => setInterruptCycle(false)} />
           )}
           <form onSubmit={handleSubmit(handleCreateNewCycle)}>
             <FormProvider {...newCycleForm}>
