@@ -1,5 +1,5 @@
 # Focus-To-Do
-![focus-to-do](https://github.com/maricastroc/focus-to-do/assets/121824373/5bfce687-c3ff-471f-95fe-eb257786576b)
+![focus-to-do](https://github.com/maricastroc/focus-to-do/assets/121824373/1789680c-0713-48d9-b346-275d088aa491)
 
 ## 📚 Project Description
 Focus-to-Do is a Pomodoro Timer. The Pomodoro Technique is a time management method that helps improve productivity and focus. This application implements the Ignite Timer, allowing you to break your work into intervals of focused work and short breaks.
