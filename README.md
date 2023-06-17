@@ -35,7 +35,7 @@ In this project, I had the opportunity to practice working with many of ReactJS 
 > Clone the repository:
 
 ```bash
-git clone https://github.com/maricastroc/github-blog
+git clone https://github.com/maricastroc/focus-to-do
 ```
 
 > Install the dependencies:
